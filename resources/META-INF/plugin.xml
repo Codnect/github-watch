@@ -30,6 +30,15 @@
 
   <actions>
     <!-- Add your actions here -->
+    <group id="org.codnect.githubwatch.actions.GithubWatchGroupedActions"
+           text="Github Watch"
+           popup="true">
+      <add-to-group group-id="ToolsMenu" anchor="first"/>
+      <action class="org.codnect.githubwatch.actions.SettingsAction"
+              id="org.codnect.githubwatch.actions.SettingsAction"
+              text="Settings"
+              description="Github Watch Settings"/>
+    </group>
   </actions>
 
 </idea-plugin>
