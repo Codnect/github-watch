@@ -26,6 +26,10 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
+    <applicationConfigurable
+            instance="org.codnect.githubwatch.configurable.GitHubWatchConfigurable"
+            groupId="tools"
+            displayName="GitHub Watch Plugin"/>
   </extensions>
 
   <actions>
