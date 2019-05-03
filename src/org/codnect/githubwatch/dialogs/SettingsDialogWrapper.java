@@ -28,10 +28,21 @@ public class SettingsDialogWrapper extends DialogWrapper {
     @Override
     protected JComponent createCenterPanel() {
         JPanel dialogPanel = new JPanel(new BorderLayout());
-        dialogPanel.setSize(new Dimension(DIALOG_WIDTH, DIALOG_HEIGHT));
-        JLabel label = new JLabel("testing");
-        label.setPreferredSize(new Dimension(20, 20));
-        dialogPanel.add(label, BorderLayout.CENTER);
+        GroupLayout groupLayout = new GroupLayout(dialogPanel);
+        JLabel labelGitHubApiKey = new JLabel("GitHub Api Key :");
+        JTextField textFieldGitHubApiKey = new JTextField();
+        textFieldGitHubApiKey.setPreferredSize(new Dimension(200, 30));
+
+        groupLayout.setHorizontalGroup(
+                groupLayout.createSequentialGroup()
+                        .addGroup(groupLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
+                                .addComponent(labelGitHubApiKey)
+                                .addComponent(textFieldGitHubApiKey)
+                        )
+
+
+        );
+        dialogPanel.setPreferredSize(new Dimension(DIALOG_WIDTH, DIALOG_HEIGHT));
         return dialogPanel;
     }
 
