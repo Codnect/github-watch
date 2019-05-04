@@ -30,6 +30,8 @@
             instance="org.codnect.githubwatch.configurable.GitHubWatchConfigurable"
             groupId="tools"
             displayName="GitHub Watch Plugin"/>
+    <applicationService serviceInterface="org.codnect.githubwatch.config.PluginConfig"
+                        serviceImplementation="org.codnect.githubwatch.config.PluginConfig"/>
   </extensions>
 
   <actions>
