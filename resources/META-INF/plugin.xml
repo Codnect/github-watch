@@ -32,6 +32,8 @@
             displayName="GitHub Watch Plugin"/>
     <applicationService serviceInterface="org.codnect.githubwatch.config.PluginConfig"
                         serviceImplementation="org.codnect.githubwatch.config.PluginConfig"/>
+    <toolWindow id="GitHub Watch" secondary="true" anchor="right"
+                factoryClass="org.codnect.githubwatch.gui.panel.GitHubWatchToolWindowFactory"/>
   </extensions>
 
   <actions>
